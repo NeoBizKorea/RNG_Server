@@ -1,0 +1,44 @@
+{
+	"name": "ciscryp-server",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"preinstall": "npm install -g typescript@4.7.4 ts-node",
+		"dev": "ts-node app.ts",
+		"dev:watch": "nodemon app.ts --delay 2",
+		"build": "sudo tsc",
+		"start": "node app"
+	},
+	"dependencies": {
+		"@babel/cli": "^7.0.0",
+		"aws-sdk": "^2.1176.0",
+		"babel-polyfill": "^6.26.0",
+		"body-parser": "^1.20.0",
+		"cookie-parser": "~1.4.4",
+		"cors": "^2.8.5",
+		"debug": "~2.6.9",
+		"dotenv": "^16.0.1",
+		"ejs": "~2.6.1",
+		"express": "~4.16.1",
+		"express-session": "^1.17.3",
+		"fs": "^0.0.1-security",
+		"http-errors": "~1.6.3",
+		"jsonwebtoken": "^8.5.1",
+		"morgan": "~1.9.1",
+		"multer": "^1.4.5-lts.1",
+		"mysql2": "^2.3.3",
+		"passport": "^0.6.0",
+		"passport-jwt": "^4.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"@babel/node": "^7.12.10",
+		"@babel/preset-env": "^7.12.10",
+		"@types/express": "^4.17.13",
+		"@types/node": "^18.0.3",
+		"@types/passport-jwt": "^3.0.6",
+		"@types/mkdirp": "^1.0.1",
+		"babel-preset-es2015": "^6.24.1",
+		"nodemon": "^2.0.6"
+	}
+}
